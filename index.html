@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tic Tac Toe</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <main>
+            <h1>Tic Tac Toe 2024</h1>
+            <h2>Par MisterWaner</h2>
+            <div id="game-field">
+                <div id="game-grid">
+                    <div data-cell-index="0" class="cell"></div>
+                    <div data-cell-index="1" class="cell"></div>
+                    <div data-cell-index="2" class="cell"></div>
+                    <div data-cell-index="3" class="cell"></div>
+                    <div data-cell-index="4" class="cell"></div>
+                    <div data-cell-index="5" class="cell"></div>
+                    <div data-cell-index="6" class="cell"></div>
+                    <div data-cell-index="7" class="cell"></div>
+                    <div data-cell-index="8" class="cell"></div>
+                </div>
+                <div id="scores">
+                    <p id="nbMatches">0 manche</p>
+                    <p class="scores-title">Scores</p>
+                    <p id="player1" class="player1">
+                        <strong>X</strong> Joueur 1 : <span id="score1">0</span>
+                    </p>
+                    <p id="player2" class="player2">
+                        <strong>O</strong> Joueur 2 : <span id="score2">0</span>
+                    </p>
+                    <p id="msg" class="messages"></p>
+                    <div class="button-group">
+                        <button id="newMatch">Nouvelle manche</button>
+                        <button id="newGame">Nouvelle partie</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
